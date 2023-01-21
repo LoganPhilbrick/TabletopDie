@@ -15,11 +15,12 @@
   </head>
   <body>
     <nav class="navbar navbar-dark">
-      <a class="navbar-brand m-auto" href="#">Tabletop-Die</a>
+      <a class="navbar-brand m-auto p-4" href="#">Tabletop-Die</a>
     </nav>
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-3 border rounded pt bg-light">
+
+    <div class="container-fluid">
+      <div class="row pt-5 pl-0 pr-0 pl-sm-4 pr-sm-4">
+        <div id="historyBox" class="col-10 col-sm-4 col-md-3 border rounded bg-light m-auto m-sm-0">
           <h5 class="text-center p-3 text-black border-bottom">History</h5>
           <ul class="list-unstyled text-left">
             <li>1 x d4 = 2</li>
@@ -41,7 +42,7 @@
             <li>1 x d20 = 3</li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col order-first order-sm-last">
           <div class="row">
             <div class="col-12 text-center">
               <p id="result" class="border rounded-pill p-4 bg-light text-black-50">Results placeholder</p>
@@ -73,8 +74,8 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-6 text-center border-top pt-5">
+          <div class="row justify-content-center pb-4">
+            <div class="col-6 text-center pt-3 pb-5">
               <button id="clickToRoll" type="button" class="btn btn-lg btn-light">Roll!</button>
             </div>
           </div>

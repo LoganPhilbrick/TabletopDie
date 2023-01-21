@@ -1,7 +1,11 @@
 body{
-    background-color: 	#212124;
+    background-color: #212124;
 }
 
 nav{
     background-color: #161618;
+}
+
+#historyBox{
+height: 495px;
 }
