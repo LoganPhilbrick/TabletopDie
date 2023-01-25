@@ -8,4 +8,9 @@ nav{
 
 #historyBox{
 height: 495px;
+border-radius: 15px;
+}
+
+.blueBorder{
+    border: 2px solid rgb(85, 85, 255);
 }
