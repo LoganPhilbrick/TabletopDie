@@ -9,8 +9,31 @@ nav{
 #historyBox{
 height: 495px;
 border-radius: 15px;
+overflow-y: scroll;
+
 }
 
 .blueBorder{
     border: 2px solid rgb(85, 85, 255);
 }
+
+::-webkit-scrollbar{
+    width: 10px
+    
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 100vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+ }
+
+::-webkit-scrollbar-thumb{
+    background: #8c8c8c;
+    border-radius: 100vw;
+ }
+
+ ::-webkit-scrollbar-corner{
+    border-radius: 100vw;
+ }
