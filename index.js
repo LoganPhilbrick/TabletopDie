@@ -1,5 +1,6 @@
 const rollButton = document.getElementById("clickToRoll");
 const rollResult = document.getElementById("result");
+const resetButton = document.getElementById("reset");
 let list = [];
 let listUl = document.getElementById("historyList");
 
@@ -8,26 +9,26 @@ rollButton.addEventListener("click", function () {
   let nRolls = checkedParentRolls();
   let rollTotal = Math.floor(Math.random() * nSides + 1) * nRolls;
   rollResult.innerText = `Roll total: ${rollTotal}`;
-  list.push(`${checkedParentRolls()} x ${checkedParentSides()} = ${rollTotal}`);
+  list.push(`${checkedParentRolls()} x D${checkedParentSides()} = ${rollTotal}`);
 
   let li = document.createElement("li");
   li.innerText = list[list.length - 1];
   listUl.insertBefore(li, listUl.firstChild);
-
-  if (list.length >= 10) {
-    list.pop();
-  }
 });
 
-// function deleteChild() {
-//   let e = document.querySelector("ul");
+resetButton.addEventListener("click", function () {
+  deleteChild();
+});
 
-//   let child = e.lastElementChild;
-//   while (child) {
-//     e.removeChild(child);
-//     child = e.lastElementChild;
-//   }
-// }
+function deleteChild() {
+  let e = document.querySelector("ul");
+
+  let child = e.lastElementChild;
+  while (child) {
+    e.removeChild(child);
+    child = e.lastElementChild;
+  }
+}
 
 function checkedParentRolls() {
   let radioButtonGroup = document.getElementsByName("numOfRolls");

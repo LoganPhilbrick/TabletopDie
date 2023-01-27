@@ -1,39 +1,92 @@
 body{
     background-color: #212124;
-}
-
-nav{
-    background-color: #161618;
-}
-
-#historyBox{
-height: 495px;
-border-radius: 15px;
-overflow-y: scroll;
-
-}
-
-.blueBorder{
-    border: 2px solid rgb(85, 85, 255);
-}
-
-::-webkit-scrollbar{
-    width: 10px
     
 }
 
-::-webkit-scrollbar-track{
+.boxShadow{
+    box-shadow: 0px 0px 15px black;
+}
+
+.blueBorder{
+    border: 2px solid #5555ff;
+}
+
+nav{
+    background-image: linear-gradient(to right, #212124,  #161616, #212124);
+    box-shadow: 0px 0px 15px black;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px black;
+}
+
+label:hover {
+    scale: 1.1;
+    transition: .5s;
+}
+
+#historyBox{
+height: 480px;
+border-radius: 15px;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+@media(max-width: 767px){
+    #historyBox{
+        height: 360px;
+        border-radius: 15px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        }
+}
+
+#result{
+    border-radius: 15px;
+}
+
+#reset{
+    position: absolute;
+    top: 13px;
+    right: 0px;
+    transition: .5s;
+}
+
+#reset:hover{
+    transition: .5s;
+    scale: 1.2;
+}
+
+#clickToRoll{
+    transition: .5s;
+}
+
+#clickToRoll:hover{
+    scale: 1.1;
+    transition: .5s;
+}
+
+/* Webkit-scrollbar styles */
+
+#historyBox::-webkit-scrollbar{
+    width: 15px
+    
+}
+
+#historyBox::-webkit-scrollbar-track{
     background: transparent;
     border-radius: 100vw;
     margin-bottom: 10px;
     margin-top: 10px;
  }
 
-::-webkit-scrollbar-thumb{
+ #historyBox::-webkit-scrollbar-thumb{
+    border: 5px solid #343a40;
     background: #8c8c8c;
     border-radius: 100vw;
  }
 
- ::-webkit-scrollbar-corner{
+ #historyBox::-webkit-scrollbar-corner{
     border-radius: 100vw;
  }
