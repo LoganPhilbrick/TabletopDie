@@ -7,8 +7,18 @@ body{
     box-shadow: 0px 0px 15px black;
 }
 
+.roundedBtn{
+    border-radius: 5px;
+}
+
 .blueBorder{
+    border-radius: 5px;
     border: 2px solid #5555ff;
+}
+
+.greenBorder{
+    border-radius: 5px;
+    border: 2px solid #5cb85c;
 }
 
 nav{
